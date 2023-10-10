@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerodha - Online stock trading </title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon"
+        href="data:image/png;base64,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"
+        type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="navbar">
+            <div class="inner-nav">
+                <div class="leftnav">
+                    <a class="logo" href=""><img src="Images/logo.svg" <img style="padding-left: 20%;padding-top: 20px;"
+                            width="129px" height="16px"></a>
+
+                </div>
+                <div class="rightnav">
+                    <ul>
+                        <nav class="navbar-links" style="font-family:inherit">
+                            <a  style="text-decoration: none;color: #666;" href=" https://signup.zerodha.com/"><span class="navbar-links1">
+                                    Signup </span> </a>
+                            <a style="text-decoration: none;color: #666;" href="https://zerodha.com/about/"><span class="navbar-links1">
+                                    About</span> </a>
+                            <a style="text-decoration: none;color: #666;" href="https://zerodha.com/products/"><span class="navbar-links1">
+                                    Products </span> </a>
+                            <a style="text-decoration: none;color: #666;" href="https://zerodha.com/pricing/"><span class="navbar-links1"> 
+                                    Pricing </span> </a>
+                            <a style="text-decoration: none;color: #666;" href="https://support.zerodha.com/"><span class="navbar-links1">
+                                    Support</span> </a>
+                            <link rel="stylesheet"
+                                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <!-- <div class="topnav">
+                                    <a href="#home" class="active">Logo</a>
+                                    <div id="myLinks">
+                                      <a href="#news">News</a>
+                                      <a href="#contact">Contact</a>
+                                      <a href="#about">About</a>
+                                    </div> -->
+                            <a style="color: #666;" href=""><i class="fa fa-bars"></i></a>
+
+                </div>
+
+                </nav>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="content" ">
+            <div>
+                <img  class=" content-img text center" src="Images/landing.png">
+            <h1 id="font1" style="text-align: center;font-size: 45px;" width: 1100px;height: 55px;>Invest in
+                everything </h1>
+            <h6 id="font2" style="text-align: center;font-size:20px;">Online platform to invest in stocks, derivatives,
+                mutual funds, and more</h6>
+            <button id="button" style="font-size: 20px;">Sign up now</button>
+        </div>
+
+
+    </div>
+    <section class="section1" style="width: 100%;height: 450px;">
+        <div class="content2">
+            <div class="left-img">
+                <img src="Images/largest-broker.svg" alt="">
+
+            </div>
+            <div class="right">
+                <h2 class="right-text-head">Largest stock broker in India</h2>
+                <p class="right-text">1+ Crore Zerodha clients contribute to over 15% of all retail order<br> volumes in
+                    India daily by
+                    trading and investing in:</p>
+                <!-- <div class="list">
+                    <div class="list1">
+                        <ul>
+                            <li>Futures and Options</li>
+                            <li>Commodity derivatives</li>
+                            <li>Currency derivatives</li>
+                        </ul>
+                    </div>
+                    <div class="list2">
+                        <ul>
+                            <li>Stocks & IPOs</li>
+                            <li>Direct mutual funds</li>
+                            <li>Bonds and Govt. Securities</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="press-logo" style="display: flex;">
+                        <a style="width: 528;height: 29;" href=""><img src="Zerodha/Images/press-logos.png" alt=""></a>
+                    </div>
+                </div> -->
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <ul>
+                            <li>Futures and Options</li>
+                            <li>Commodity derivatives</li>
+                            <li>Currency derivatives</li>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <ul>
+                            <li>Stocks & IPOs</li>
+                            <li>Direct mutual funds</li>
+                            <li>Bonds and Govt. Securities</li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="press-logo" style="width: 500px;height: 38px;">
+                    <a href=""> <img src="Zerodha/Images/press-logos.png" alt=""></a>
+
+                </div>
+
+            </div>
+    </section>
+    <section class="section2">
+        <div class="section2-content1">
+            <h1>The Zerodha Universe</h1>
+            <p class="para1">A whole ecosystem of modern investment apps<br>
+                tailored to specific needs, built from the ground up</p>
+            <a href="https://zerodha.com/products"> <img class="eco-img" src="Images/ecosystem.png" alt=""></a>
+            <p class="pro-link">
+                <a class="product-link1" href="https://zerodha.com/products">Explore our products
+                    <span>&#8594;</span></a>
+                <a class="product-link2" href="https://zerodha.com/products">Try Kite demo <span>&#8594;</span></a>
+            </p>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="section3-content1">
+
+            <div class="section3-top">
+                <div class="section3-top-left">
+                    <h1 class="top-left-head">Unbeatable pricing</h1>
+                    <p class="top-left-para">We pioneered the concept of discount broking and price<br>transparency in
+                        India. Flat fees and no hidden charges.</p>
+                    <a href="https://zerodha.com/pricing" class="see-pricing">See pricing </a>
+
+                </div>
+                <div class="section3-top-right">
+                    <div class="grid-container2">
+                        <div class="grid-item1"><i class="fa fa-rupee" style="font-size:48px;color: #666;"></i>0 <br>
+                            <p class="grids1">Free equity delivery and<br>direct mutual funds</p>
+                        </div>
+
+                        <div class="grid-item2"><i class="fa fa-rupee" style="font-size:48px;color:#666"></i>20 <br>
+                            <p class="grids1">Intraday and F&O</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="section3-bottom">
+                <div class="section3-botttom-left">
+                    <a class="index-img" href=""> <img src="Images/index-education.svg"></a>
+
+                </div>
+                <div class="section3-bottom-right">
+                    <h4 class="section3-bottom-right-head">Free and open market education</h4>
+                    <p class="grid2">Varsity, the largest online stock market education book in the world<br>covering
+                        everything from the
+                        basics to advanced trading.</p>
+                    <a class="product-link3" href="https://zerodha.com/varsity/">Varsity </a>
+                    <p class="grid2">TradingQ&A, the most active trading and investment community in<br>India for all
+                        your market related
+                        queries.</p>
+                    <a class="product-link3" href="https://tradingqna.com/">TradingQ&A </a>
+                </div>
+
+
+            </div>
+            <div class="bottom-bottom">
+                <div class="bottom3">
+                    <h1 class="open-acct">Open a Zerodha account</h1>
+                    <p class="zerodha-abt">Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O
+                        trades.</p>
+                    <button id="button2">
+                        Sign up now
+                    </button>
+                </div>
+
+            </div>
+            <div class="top-footer">
+                <div class="top-footer1">
+                    <img src="Images/logo.svg" width="129px" height="16px">
+                    <p class="rights-reserved">© 2010 - 2023, Zerodha Broking Ltd.<br>All rights reserved.</p>
+
+                </div>
+                <div class="grid-container4">
+                    <div class="grid-item5">Company<br>
+                        <div class="grid-item4"><a href="https://zerodha.com/about/"
+                                class="grid-item-links">About</a><br>
+                            <a href="https://zerodha.com/products/" class="grid-item-links">Products</a><br>
+                            <a href="https://zerodha.com/pricing/" class="grid-item-links">Pricing</a><br>
+                            <a href="https://zerodha.com/refer/" class="grid-item-links">Referral programme</a> <br>
+                            <a href="https://careers.zerodha.com/" class="grid-item-links">Careers</a><br>
+                            <a href="https://zerodha.tech/" class="grid-item-links">Zerodha.tech</a><br>
+                            <a href="https://zerodha.com/media/" class="grid-item-links">Press & media</a> <br>
+                            <a href="https://zerodha.com/cares/" class="grid-item-links">Zerodha Cares (CSR)</a>
+                        </div>
+                    </div>
+                    <div class="grid-item5">Support
+                        <br>
+                        <div class="grid-item4"><a href="https://zerodha.com/contact/" class="grid-item-links">Contact
+                                us</a><br>
+                            <a href="https://support.zerodha.com/" class="grid-item-links">Support portal</a><br>
+                            <a href="https://zerodha.com/z-connect/" class="grid-item-links">Z-Connect blog</a><br>
+                            <a href="https://zerodha.com/charges/#tab-equities" class="grid-item-links">List of
+                                charges</a><br>
+                            <a href="https://zerodha.com/resources/" class="grid-item-links">Downloads & resources</a>
+                            <br>
+                            <a href="https://zerodha.com/videos/" class="grid-item-links">Videos</a><br>
+                            <a href="https://stocks.zerodha.com/" class="grid-item-links">Market overview</a><br>
+                            <a class="grid-item-links"
+                                href="https://support.zerodha.com/category/your-zerodha-account/your-profile/ticket-creation/articles/how-do-i-create-a-ticket-at-zerodha">How
+                                to file a complaint?</a><br>
+                            <a class="grid-item-links"
+                                href="https://support.zerodha.com/category/your-zerodha-account/your-profile/ticket-creation/articles/track-complaints-or-tickets">Status
+                                of your complaints</a>
+                        </div>
+                    </div>
+                    <div class="grid-item5">Account
+                        <br>
+                        <div class="grid-item4"><a href="https://zerodha.com/open-account/" class="grid-item-links">Open
+                                an account</a><br>
+                            <a href="https://zerodha.com/fund-transfer/#tab-deposit_funds" class="grid-item-links">Fund
+                                transfer</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="botton-footer">
+                <p> Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration no.: INZ000031633 CDSL/NSDL:
+                    Depository services through Zerodha Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Commodity
+                    Trading through <br>Zerodha Commodities Pvt. Ltd. MCX: 46025 – SEBI Registration no.: INZ000038238
+                    Registered Address: Zerodha Broking Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public
+                    School, J.P Nagar 4th Phase,<br>Bengaluru - 560078, Karnataka, India. For any complaints pertaining
+                    to securities broking please write to <a href="complaints@zerodha.com"
+                        class="bottom-footer-links">complaints@zerodha.com</a>, for DP related to <a href=""
+                        class="bottom-footer-links">dp@zerodha.com.</a> Please ensure you carefully read the Risk
+                    Disclosure<br>Document as prescribed by SEBI | ICF</p>
+                <p> Procedure to file a complaint on <a href="https://scores.gov.in/scores/Welcome.html"
+                        class="bottom-footer-links">SEBI SCORES</a>: Register on SCORES portal. Mandatory details for
+                    filing complaints on SCORES: Name, PAN, Address, Mobile Number, E-mail ID. Benefits: Effective
+                    Communication, Speedy<br>redressal of the grievances</p>
+                <p> Investments in securities market are subject to market risks; read all the related documents
+                    carefully before investing.</p>
+                <p> Attention investors: 1) Stock brokers can accept securities as margins from clients only by way of
+                    pledge in the depository system w.e.f September 01, 2020. 2) Update your e-mail and phone number
+                    with your stock broker /<br>depository participant and receive OTP directly from depository on your
+                    e-mail and/or mobile number to create pledge. 3) Check your securities / MF / bonds in the
+                    consolidated account statement issued by NSDL/CDSL<br>every month.</p>
+                <p> "Prevent unauthorised transactions in your account. Update your mobile numbers/email IDs with your
+                    stock brokers. Receive information of your transactions directly from Exchange on your mobile/email
+                    at the end of the day.<br>Issued in the interest of investors. KYC is one time exercise while
+                    dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP,
+                    Mutual Fund etc.), you need not undergo the same<br>process again when you approach another
+                    intermediary." Dear Investor, if you are subscribing to an IPO, there is no need to issue a cheque.
+                    Please write the Bank account number and sign the IPO application form to<br>authorize your bank to
+                    make payment in case of allotment. In case of non allotment the funds will remain in your bank
+                    account. As a business we don't give stock tips, and have not authorized anyone to trade on behalf
+                    of<br>others. If you find anyone claiming to be part of Zerodha and offering such services, please
+                    <a href="https://support.zerodha.com/category/your-zerodha-account/your-profile/articles/how-do-i-place-a-complaint-at-zerodha"
+                        class="bottom-footer-links">create a ticket here</a>.</p>
+
+
+            </div>
+            <div>
+                <ul class="footer-list">
+                    <li><a href="" class="footer-list-links">NSE </a></li>
+                    <li><a href="" class="footer-list-links">BSE</a></li>
+                    <li><a href="" class="footer-list-links">MCX</a></li>
+                    <li><a href="" class="footer-list-links">Terms&conditions</a></li>
+                    <li><a href="" class="footer-list-links">Policies&procedures</a></li>
+                    <li><a href="" class="footer-list-links">Privacy policy</a></li>
+                    <li><a href="" class="footer-list-links">Disclosure</a></li>
+                    <li><a href="" class="footer-list-links">For investor's attention</a></li>
+                    <li><a href="" class="footer-list-links">Investor charter</a></li>
+                </ul>
+
+            </div>
+
+
+    </section>
+    </div>
+</body>
+
+</html>
